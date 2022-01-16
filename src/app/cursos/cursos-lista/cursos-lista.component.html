@@ -1,1 +1,35 @@
-<p>cursos-lista works!</p>
+<div class="card mt-5">
+
+    <div class="card-body">
+      <div class=" d-flex justify-content-end">
+
+        <button class="btn btn-primary" type="button">Adicionar Curso</button>
+      </div>
+      <h2>Cursos</h2>
+      <table class="table" *ngIf="cursos$ | async as cursos; else loading">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nome</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let curso of cursos">
+            <th scope="row">{{ curso.id}}</th>
+            <td>{{curso.nome}}</td>
+            <div class="tm-table">
+              <button class="btn btn-outline-success m-1" type="button">Atualizar</button>
+              {{""}}
+              <button class="btn btn-outline-danger m-1" type="button">Remover</button>
+            </div>
+
+          </tr>
+
+        </tbody>
+      </table>
+      <ng-template #loading>
+        <span>Carregando cursos...</span>
+      </ng-template>
+    </div>
+  </div>
