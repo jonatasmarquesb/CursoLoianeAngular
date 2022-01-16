@@ -3,6 +3,26 @@
     {
       "id": 1,
       "nome": "Angular"
+    },
+    {
+      "nome": "Java OO",
+      "id": 2
+    },
+    {
+      "nome": "Spring",
+      "id": 3
+    },
+    {
+      "nome": "Bootstrap",
+      "id": 4
+    },
+    {
+      "nome": "Minha namorada é linda",
+      "id": 5
+    },
+    {
+      "nome": "Casa comigo",
+      "id": 6
     }
   ]
 }
